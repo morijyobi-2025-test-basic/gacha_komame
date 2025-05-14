@@ -1,6 +1,19 @@
+// 割合の定数を読み込む
+import {rs, ra, rb, rc } from './settings.js'
+
 const gacha = () => {
-    const lucky = ['S', 'A', 'B', 'C'];
-    const random = Math.floor(Math.random() * 4);
-    return lucky[random];
+  // S, A, B, Cのいずれかをランダムに返す
+  // Sはrs, Aはra, Bはrb, Cはrc の確率で出る
+  const random = Math.random()
+  if (random < rs) {
+    return 'S'
+  } else if (random < rs + ra) {
+    return 'A'
+  } else if (random < rs + ra + rb) {
+    return 'B'
+  } else if (random < rs + ra + rb + rc) {
+    return 'C'
+  }
 }
-module.exports = gacha;
+
+export default gacha
