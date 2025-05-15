@@ -60,4 +60,28 @@ describe('settings.js について', () => {
     })
   })
 
+  describe('rsの値は', () => {
+    it('整数である', () => {
+      expect(rs % 1).toBe(0)
+    })
+  })
+  describe('raの値は', () => {
+    it('整数である', () => {
+      expect(ra % 1).toBe(0)
+    })
+  })
+  describe('rbの値は', () => {
+    it('整数である', () => {
+      expect(rb % 1).toBe(0)
+    })
+  })
+
+  describe('rcの値は', () => {
+    it('整数である', () => {
+      expect(rc % 1).toBe(0)
+    })
+  })
+
+
+
 })
