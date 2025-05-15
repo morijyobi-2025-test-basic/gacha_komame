@@ -51,4 +51,13 @@ describe('settings.js について', () => {
       expect(rs + ra + rb + rc).toBe(1)
     })
   })
+
+  describe('確率の勾配', () => {
+    it('S < A < B < C の順になっている', () => {
+      expect(rs).toBeLessThan(ra)  // rs < ra
+      expect(ra).toBeLessThan(rb)  // ra < rb
+      expect(rb).toBeLessThan(rc)  // rb < rc
+    })
+  })
+
 })
