@@ -10,8 +10,8 @@ describe('settings.js について', () => {
       expect(rs).toBeGreaterThan(0)
     })
 
-    it('1より小さい', () => {
-      expect(rs).toBeLessThan(1)
+    it('100より小さい', () => {
+      expect(rs).toBeLessThan(100)
     })
   })
 
@@ -21,8 +21,8 @@ describe('settings.js について', () => {
     })
 
 
-    it('1より小さい', () => {
-      expect(ra).toBeLessThan(1)
+    it('100より小さい', () => {
+      expect(ra).toBeLessThan(100)
     })
   })
 
@@ -31,8 +31,8 @@ describe('settings.js について', () => {
       expect(rb).toBeGreaterThan(0)
     })
 
-    it('1より小さい', () => {
-      expect(rb).toBeLessThan(1)
+    it('100より小さい', () => {
+      expect(rb).toBeLessThan(100)
     })
   })
 
@@ -41,14 +41,14 @@ describe('settings.js について', () => {
       expect(rc).toBeGreaterThan(0)
     })
 
-    it('1より小さい', () => {
-      expect(rc).toBeLessThan(1)
+    it('100より小さい', () => {
+      expect(rc).toBeLessThan(100)
     })
   })
 
   describe('割合の合計値', () => {
-    it('1である', () => {
-      expect(rs + ra + rb + rc).toBe(1)
+    it('100である', () => {
+      expect(rs + ra + rb + rc).toBe(100)
     })
   })
 
