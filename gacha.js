@@ -4,7 +4,7 @@ import {rs, ra, rb, rc } from './settings.js'
 const gacha = () => {
   // S, A, B, Cのいずれかをランダムに返す
   // Sはrs, Aはra, Bはrb, Cはrc の確率で出る
-  const random = Math.random()
+  const random = Math.random()*100
   if (random < rs) {
     return 'S'
   } else if (random < rs + ra) {
