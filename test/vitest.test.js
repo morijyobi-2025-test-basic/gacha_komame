@@ -1,4 +1,4 @@
-import { describe, expect, it  } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 
 import gacha from '../gacha.js'
 
@@ -29,4 +29,63 @@ describe('gacha関数の', () => {
     })
 
   })
+
+  describe('Math.ramdom（）について', () =>{
+    it('0.01の場合', () => {
+      // sがでる
+      // Math.ramdomが0.01を必ず返すようにspyOnする
+      vi.spyOn(Math, 'random').mockReturnValue(0.01)
+      expect(gacha()).toBe('S')
+    })
+    it('0.0499999の場合', ()  =>{
+      // sがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.0499999)
+      expect(gacha()).toBe('S')
+
+    })
+    it('0.05の場合', () =>{
+      // Aがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.05)
+      expect(gacha()).toBe('A')
+
+    })
+    it('0.14の場合', () =>{
+      // Aがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.14)
+      expect(gacha()).toBe('A')
+
+    })
+    it('0.15の場合', () =>{
+      // Bがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.15)
+      expect(gacha()).toBe('B')
+
+    })
+    it('0.34の場合', () =>{
+      // Bがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.34)
+      expect(gacha()).toBe('B')
+
+    })
+    it('0.35の場合', () =>{
+      // Cがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.35)
+      expect(gacha()).toBe('C')
+
+    })
+    it('0.60の場合', () =>{
+      // Cがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.60)
+      expect(gacha()).toBe('C')
+
+    })
+    it('0.99の場合', () =>{
+      // Cがでる
+      vi.spyOn(Math, 'random').mockReturnValue(0.99)
+      expect(gacha()).toBe('C')
+
+    })
+
+  })
+
 })
