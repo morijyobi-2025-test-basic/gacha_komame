@@ -1,11 +1,10 @@
-// 割合の定数を読み込む
-import {rs, ra, rb, rc } from './settings.js'
+import settings from './settings.js'
 
 const pool = [
-  ...Array(rs).fill('S'), // Sランクをrs個
-  ...Array(ra).fill('A'), // Aランクをra個
-  ...Array(rb).fill('B'), // Bランクをrb個
-  ...Array(rc).fill('C')  // Cランクをrc個
+  ...Array(settings.rs).fill('S'), // Sランクをrs個
+  ...Array(settings.ra).fill('A'), // Aランクをra個
+  ...Array(settings.rb).fill('B'), // Bランクをrb個
+  ...Array(settings.rc).fill('C')  // Cランクをrc個
 ]
 
 // pool配列からランダムに1つ選んで返す関数
