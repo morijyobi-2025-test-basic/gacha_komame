@@ -1,4 +1,16 @@
-export const rs = 5
-export const ra = 10
-export const rb = 20
-export const rc = 65
+const settings = {
+  get rs() {
+    return 5
+  },
+  get ra() {
+    return 10
+  },
+  get rb() {
+    return 20
+  },
+  get rc() {
+    return 65
+  },
+}
+
+export default settings

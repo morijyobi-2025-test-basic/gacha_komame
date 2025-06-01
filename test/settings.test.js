@@ -1,8 +1,12 @@
 import { describe, expect, it  } from 'vitest'
 
-import { rs, ra, rb, rc } from '../settings.js'
+import settings from '../settings.js'
 
 describe('settings.js について', () => {
+  const rs = settings.rs
+  const ra = settings.ra
+  const rb = settings.rb
+  const rc = settings.rc
 
 
   describe('rsの値', () => {
