@@ -14,6 +14,7 @@
     "eslint-plugin-prettier": "5.4.1",
     "globals": "16.2.0",
     "prettier": "3.5.3",
+    "supertest": "^7.1.1",
     "vitest": "3.2.1"
   },
   "directories": {
