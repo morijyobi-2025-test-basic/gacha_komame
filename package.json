@@ -32,7 +32,7 @@
     "cac": "^6.7.14",
     "callsites": "^3.1.0",
     "chai": "^5.2.0",
-    "chalk": "^4.1.2",
+    "chalk": "^5.4.1",
     "check-error": "^2.1.1",
     "color-convert": "^2.0.1",
     "color-name": "^2.0.0",
