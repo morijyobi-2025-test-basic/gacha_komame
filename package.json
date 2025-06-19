@@ -123,7 +123,7 @@
     "uri-js": "^4.4.1",
     "vite": "^6.3.5",
     "vite-node": "^3.1.2",
-    "which": "^2.0.2",
+    "which": "^5.0.0",
     "why-is-node-running": "^2.3.0",
     "word-wrap": "^1.2.5",
     "yocto-queue": "^0.1.0"
